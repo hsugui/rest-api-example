@@ -14,7 +14,7 @@ public class UserForm {
 
     @NotBlank(message = "Nome não pode estar em branco")
     private String name;
-    @Email(message = "Endereço de e-mail inválido")
+    @NotBlank @Email(message = "Endereço de e-mail inválido")
     private String email;
     @CPF(message = "Número de CPF inválido")
     private String cpf;

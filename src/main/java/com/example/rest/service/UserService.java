@@ -3,6 +3,7 @@ package com.example.rest.service;
 import com.example.rest.model.dto.UserDto;
 import com.example.rest.model.entity.User;
 import com.example.rest.model.form.UserForm;
+import com.example.rest.model.form.UserUpdateForm;
 import com.example.rest.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,7 +37,7 @@ public class UserService {
         return null;
     }
 
-    public UserDto updateById(UserForm form, Long id) {
+    public UserDto updateById(UserUpdateForm form, Long id) {
         Optional<User> op = userRepository.findById(id);
         if (op.isPresent()) {
             User obj = op.get();
@@ -45,12 +46,6 @@ public class UserService {
             }
             if (form.getEmail() != null) {
                 obj.setEmail(form.getEmail());
-            }
-            if (form.getCpf() != null) {
-                obj.setCpf(form.getCpf());
-            }
-            if (form.getBirthDate() != null) {
-                obj.setBirthDate(form.getBirthDate());
             }
             userRepository.save(obj);
             return convertToDto(obj);

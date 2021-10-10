@@ -3,6 +3,7 @@ package com.example.rest.controller;
 import com.example.rest.model.dto.UserDto;
 import com.example.rest.model.form.UserForm;
 import com.example.rest.model.entity.User;
+import com.example.rest.model.form.UserUpdateForm;
 import com.example.rest.repository.UserRepository;
 import com.example.rest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    public UserDto updateById(@RequestBody UserForm form, @PathVariable("id") Long id) {
+    public UserDto updateById(@RequestBody UserUpdateForm form, @PathVariable("id") Long id) {
         return userService.updateById(form, id);
     }
 

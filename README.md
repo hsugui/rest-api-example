@@ -1,7 +1,7 @@
 # How to build a REST API using Java and Spring Boot (a tutorial)
 ![mainImage](src/main/resources/images/java-spring-rest.png)
 
-This is the source code of my tutorials on how to build a REST API with Java and Spring Boot.
+This is the source code of my tutorial on how to build a REST API with Java and Spring Boot.
 
 You can check the complete articles at my [LinkedIn profile](https://www.linkedin.com/in/hsuguihura/) (English version) or at my [Medium page](https://hiiki.medium.com/) (Portuguese version).
 

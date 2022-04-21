@@ -1,5 +1,5 @@
 # How to build a REST API using Java and Spring Boot (a tutorial)
-![mainImage](../src/main/resources/images/java-spring-rest.png)
+![mainImage](src/main/resources/images/java-spring-rest.png)
 
 This is the source code of my tutorials on how to build a REST API with Java and Spring Boot.
 
